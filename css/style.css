@@ -1,0 +1,134 @@
+@import url("./reset.css");
+@import url("./variable.css");
+@import url("./font.css");
+@import url("./defualt.css");
+
+body {
+  font-family: iransans;
+}
+.top-bar {
+  padding: 10px 0;
+  background-color: #fafafa;
+}
+.top-bar__right {
+  gap: 20px;
+}
+.top-bar__right-text {
+  color: var(--gray);
+}
+.top-bar__right-icon {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.top-bar__right-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+}
+.top-bar__right-item:not(:last-child) {
+  border-left: 1px solid rgb(219, 219, 219);
+}
+.top-bar__left-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 1px solid rgb(219, 219, 219);
+  padding-left: 8px;
+}
+.top-bar__left-social-text {
+  color: var(--gray);
+}
+.top-bar__left-social-link {
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar__left-social-icon {
+  color: white;
+}
+.top-bar__left-search {
+  margin-right: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary-color);
+}
+.top-bar__left-search-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+}
+.top-bar__left-search-btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.navbar{
+  margin-top: 10px;
+}
+.navbar-img{
+  width: 80px;
+}
+.navbar-ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navbar-link{
+  color: var(--gray);
+  position: relative;
+}
+.navbar-link:hover{
+  color: var(--primary-color);
+  position: relative;
+}
+.navbar-sec__list{
+  position: absolute;
+  top: 40px;
+  padding: 10px;
+  background-color: white;
+  border-top: 3px solid var(--primary-color);
+  width: 150px;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 400ms ease;
+  border-radius: 8px;
+}
+.navbar-sec__list li{
+  margin-bottom: 10px;
+}
+.navbar-pages{
+  display: flex;
+  gap: 6px;
+}
+.navbar-pages:hover .navbar-sec__list{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.fa-arrow-down-long{
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.navbar-btn{
+  border:1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 400ms ease;
+}
+.navbar-btn:hover{
+  border:1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+
+}

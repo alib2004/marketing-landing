@@ -1,0 +1,11 @@
+@import url('./variable.css');
+body{
+    font-family: iransans;
+}
+a{
+    color: black;
+    transition: all 400ms ease;
+}
+a:hover{
+    color: var(--primary-color);
+}
