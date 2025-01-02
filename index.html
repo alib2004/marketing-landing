@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -14,9 +21,7 @@
       <div class="container">
         <div class="row d-flex justify-content-end align-items-center gy-3">
           <div class="col-12 col-lg-6">
-            <div
-              class="top-bar__right d-flex align-items-center"
-            >
+            <div class="top-bar__right d-flex align-items-center">
               <div class="top-bar__right-item">
                 <i class="fa-solid fa-phone top-bar__right-icon"></i>
                 <span class="top-bar__right-text">09901232336</span>
@@ -72,44 +77,74 @@
       </div>
     </div>
     <!-- finish topbar -->
-     <!-- start navbar -->
-      <div class="navbar">
-        <div class="container">
-          <img src="./images/logog.png" class="navbar-img">
-          <ul class="navbar-ul">
-            <li class="navbar-li">
-              <a href="#" class="navbar-link">صفحه اصلی</a>
-            </li>
-            <li class="navbar-li  navbar-pages">
-              <a href="#" class="navbar-link">صفحات</a>
-              <i class="fa-solid fa-arrow-down-long"></i>
-              <ul class="navbar-sec__list">
-                <li>
-                  <a href="#">صفحه 1</a>
-                </li>
-                <li>
-                  <a href="#">صفحه 2</a>
-                </li>
-                <li>
-                  <a href="#">صفحه 3</a>
-                </li>
-              </ul>
-              
-            </li>
-            <li class="navbar-li">
-              <a href="#" class="navbar-link">درباره ما</a>
-            </li>
-            <li class="navbar-li">
-              <a href="#" class="navbar-link">تماس با ما</a>
-            </li>
-          </ul>
-          <button class="navbar-btn">تماس بگیرید</button>
+    <!-- start navbar -->
+    <div class="navbar">
+      <div class="container">
+        <img src="./images/logog.png" class="navbar-img" />
+        <!-- <ul class="navbar-ul">
+
+          <li class="navbar-li">
+            <a href="#" class="navbar-link">صفحه اصلی</a>
+          </li>
+          <li class="navbar-li navbar-pages">
+            <a href="#" class="navbar-link">صفحات</a>
+            <i class="fa-solid fa-arrow-down-long"></i>
+            <ul class="navbar-sec__list">
+              <li>
+                <a href="#">صفحه 1</a>
+              </li>
+              <li>
+                <a href="#">صفحه 2</a>
+              </li>
+              <li>
+                <a href="#">صفحه 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-li">
+            <a href="#" class="navbar-link">درباره ما</a>
+          </li>
+          <li class="navbar-li">
+            <a href="#" class="navbar-link">تماس با ما</a>
+          </li>
+        </ul> -->
+        <ul>
+            <li></li>
+        </ul>
+        <button class="navbar-btn">تماس بگیرید</button>
+      </div>
+    </div>
+    <!-- finish navbar -->
+    <!-- start slider -->
+    <div class="swiper mySwiper
+     slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider1">
+            <h2 class="swiper-slide__header text-center">به وبسایت علی بیغوله خوش آمدید</h2>
+            <span class="swiper-slide__text text-center">ما آژانس خلاق هستیم که کارهای دیجیتالی انجام می دهیم</span>
+            <div class="swiper-slide__btns">
+                <button class="swiper-slide__btn1">شروع کار</button>
+                <button class="swiper-slide__btn2">درباره ما</button>
+            </div>
+        </div>
+        <div class="swiper-slide slider2">
+            <h2 class="swiper-slide__header">به وبسایت علی بیغوله خوش آمدید</h2>
+            <span class="swiper-slide__text">ما آژانس خلاق هستیم که کارهای دیجیتالی انجام می دهیم</span>
+            <div class="swiper-slide__btns">
+                <button class="swiper-slide__btn1">شروع کار</button>
+                <button class="swiper-slide__btn2">درباره ما</button>
+            </div>
         </div>
       </div>
-     <!-- finish navbar -->
+      <div class="swiper-prev-next">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    </div>
+    <!-- finish slider -->
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
-  
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
