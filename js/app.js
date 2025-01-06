@@ -6,10 +6,12 @@ const swiper = new Swiper(sliders, {
     prevEl: ".swiper-button-prev",
   },
 });
-let buyers = document.querySelector(".buyers-swiper");
-const viewswiper = new Swiper(buyers, {
-  pagination: {
-    el: ".buyers-pagination",
-    dynamicBullets: true,
-  },
-});
+let opennavbar = document.querySelector('.navbar-icon-div')
+let closenavbar = document.querySelector('.close-btn')
+let navbarmobile = document.querySelector('.navbar-mobile')
+opennavbar.addEventListener('click',()=>{
+  navbarmobile.classList.add('open-nav')
+})
+closenavbar.addEventListener('click',()=>{
+  navbarmobile.classList.remove('open-nav')
+})
